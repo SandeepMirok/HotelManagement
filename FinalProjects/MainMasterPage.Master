@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMasterPage.master.cs" Inherits="FinalProjects.MainMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+         <asp:ContentPlaceHolder ID="title" runat="server">
+    </asp:ContentPlaceHolder>
+    </title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="cssPage.css" />
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="header-w3l">
+		<h1>
+			
+			<span>H</span>otel
+			<span>M</span>anagement
+            <span>S</span>ystem
+           
+		    
+		</h1>
+	</div>
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+       <ul class="nav navbar-nav navbar-left" >
+      
+          
+           </ul>
+   
+    <ul class="nav navbar-nav">
+       <li style=" border-radius:40%;    background-color:skyblue; padding:5px; margin-top:0.1px; border-radius:15%; position:relative; left:-2%;"><asp:Image ID="Image" runat="server" Width="50px " Height="45px" style="border-radius:45%; border:1px solid black;"></asp:Image>&nbsp;<asp:Label ID="lblUserName" runat="server"></asp:Label> <asp:Label ID="lblUserMsg" runat="server" Text="Label"></asp:Label></li>&nbsp;
+     <li ><a href="WebForm1.aspx">Home</a></li>
+      <li><a href="MyProfile.aspx">My Profile</a></li>
+      <li><a href="ContactPage.aspx">Contact Us</a></li>
+      <li><a href="AboutUs.aspx">About Us</a></li>
+        <li><a href="Rooms.aspx">Rooms</a></li>
+      <li><a href="Bookings.aspx">Book a Room</a></li>
+      <li><a href="Events.aspx">Event Booking</a></li>
+      <li><a href="Advanced.aspx">AdvancedSearch</a></li>
+
+    </ul>
+     <ul class="nav navbar-nav navbar-right">
+       <li><a href="Logout.aspx" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-log-out"></span> Log out
+        </a></li>
+ 
+     </ul>
+      <ul class="nav navbar-nav navbar-right">
+       <li><a href="MainHomePage.aspx" class="btn btn-info btn-lg">
+          <span class=" glyphicon glyphicon-arrow-left"></span>Home Page
+          
+        </a></li>
+ 
+     </ul>
+  </div>
+</nav>
+    <form id="form1" runat="server">
+        
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        
+    </form>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="footer">
+		<p>&copy; 2018 Creative Login Form. All rights reserved | Design by
+			<a>e.g. Copyright © 2008 Parminder.David.Sandeep Inc. All rights reserved.</a>
+		</p>
+	</div>
+</body>
+</html>
